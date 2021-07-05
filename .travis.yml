@@ -28,6 +28,7 @@ after_success:
 
 before_deploy:
 - DEPLOY_UNITYPACKAGE="$(ls -a release/*.zip | head -n 1)"
+- GITHUB_TOKEN="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"
 
 deploy:
   provider: releases
