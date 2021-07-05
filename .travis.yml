@@ -1,5 +1,5 @@
 language: csharp
-solution: Travis_CI.sln
+solution: TravisImplementation.sln
 
 mono: none
 
