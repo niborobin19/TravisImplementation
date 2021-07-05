@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{e23eb17b-a5bc-dff6-5c82-33fbec662428}</ProjectGuid>
+    <ProjectGuid>{b9bde90f-8135-2e17-17ae-84530791a8af}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>BuildManager</AssemblyName>
@@ -37,7 +37,6 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\BuildManager.cs" />
-     <Compile Include="Assets\Scripts\Builder.cs" />
      <None Include="Assets\Scripts\BuildManager.asmdef" />
     <Reference Include="UnityEngine">
         <HintPath>D:/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -271,16 +270,16 @@
         <HintPath>D:/Unity/Hub/Editor/2020.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
-        <HintPath>D:/P/TravisImplementation/Library/PackageCache/com.unity.collab-proxy@1.5.7/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+        <HintPath>D:/P/TravisImplementation/Project_Travis/Library/PackageCache/com.unity.collab-proxy@1.5.7/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="log4netPlastic">
-        <HintPath>D:/P/TravisImplementation/Library/PackageCache/com.unity.collab-proxy@1.5.7/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+        <HintPath>D:/P/TravisImplementation/Project_Travis/Library/PackageCache/com.unity.collab-proxy@1.5.7/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-        <HintPath>D:/P/TravisImplementation/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+        <HintPath>D:/P/TravisImplementation/Project_Travis/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="unityplastic">
-        <HintPath>D:/P/TravisImplementation/Library/PackageCache/com.unity.collab-proxy@1.5.7/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
+        <HintPath>D:/P/TravisImplementation/Project_Travis/Library/PackageCache/com.unity.collab-proxy@1.5.7/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>D:/Unity/Hub/Editor/2020.3.12f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -628,10 +627,10 @@
         <HintPath>D:/Unity/Hub/Editor/2020.3.12f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>D:/P/TravisImplementation/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>D:/P/TravisImplementation/Project_Travis/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>D:/P/TravisImplementation/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>D:/P/TravisImplementation/Project_Travis/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
