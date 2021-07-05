@@ -4,7 +4,7 @@ rvm:
 - 2.2         #see before_install for getting RVM stable.
 
 env:
-- TRAVIS_TAG="Deploy-2020.3.13f" PROJECT_NAME="TravisBuild" UNITY_PROJECT_PATH="" DEPLOY_UNITYPACKAGE="Build/Windows"
+- TRAVIS_TAG="Deploy-2020.3.12f1" PROJECT_NAME="TravisBuild" UNITY_PROJECT_PATH="" DEPLOY_UNITYPACKAGE="Build/Windows"
 
 
 cache:
