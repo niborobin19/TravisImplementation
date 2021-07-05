@@ -1,9 +1,12 @@
 using System;
 
-public class Builder
+namespace BuildManager
 {
-    public static void Main(string[] args)
+    public class Builder
     {
-        //("Hello world");
+        public static void Main(string[] args)
+        {
+            //("Hello world");
+        }
     }
 }
