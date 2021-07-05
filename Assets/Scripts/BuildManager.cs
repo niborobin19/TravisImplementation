@@ -3,11 +3,8 @@ using UnityEngine;
 
 namespace BuildManager
 {
-    public class BuildManager : MonoBehaviour
+    public class BuildManager
     {
-        #if UNITY_EDITOR
-
-        [MenuItem("Builds/Build My Client And Server")]
         public static void MyBuild()
         {
             try
@@ -45,7 +42,5 @@ namespace BuildManager
 
             BuildPipeline.BuildPlayer(buildPlayerOptions);
         }
-
-        #endif  
     }
 }
