@@ -9,6 +9,17 @@ branches:
   only:
   - main
 
+# environment variables used in bash scripts
+env:
+  global:
+  - UNITYCI_PROJECT_NAME="Project_Travis"
+  - UPLOAD_KEYPATH="./Scripts/upload"
+  - TRAVIS_TAG="Deploy-2020.3.12f1" 
+  - PROJECT_NAME="Project_Travis" 
+  - UNITY_PROJECT_PATH="Project_Travis" 
+  - DEPLOY_UNITYPACKAGE="path set in deploy script"
+  - secure: GITHUB_TOKEN="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"
+
 # decrypt the encrypted SSH key file so it can be used for scp auth in post_build.sh
 #before_install:
 #- openssl aes-256-cbc -k "$KEYFILE_PASS" -in "${UPLOAD_KEYPATH}.enc" -out "${UPLOAD_KEYPATH}" -d
@@ -25,12 +36,15 @@ script:
 after_success:
 - sudo -E sh ./Scripts/export-unity-package.sh
 
-# environment variables used in bash scripts
-env:
-  global:
-  - UNITYCI_PROJECT_NAME="Project_Travis"
-  - UPLOAD_KEYPATH="./Scripts/upload"
-  - TRAVIS_TAG="Deploy-2020.3.12f1" 
-  - PROJECT_NAME="Project_Travis" 
-  - UNITY_PROJECT_PATH="Project_Travis" 
-  - DEPLOY_UNITYPACKAGE="path set in deploy script"
+before_deploy:
+- DEPLOY_UNITYPACKAGE="$(ls -a release/*.zip | head -n 1)"
+
+deploy:
+  provider: releases
+  api_key: $GITHUB_TOKEN
+  file: $DEPLOY_UNITYPACKAGE
+  skip_cleanup: true
+  overwrite: true
+  on:
+    tags: true 
+
